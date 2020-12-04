@@ -1,0 +1,35 @@
+byr:
+  length: 4
+  min: 1920
+  max: 2002
+iyr:
+  length: 4
+  min: 2010
+  max: 2020
+eyr:
+  length: 4
+  min: 2020
+  max: 2030
+hgt:
+  cm:
+    min: 150
+    max: 193
+  in:
+    min: 59
+    max: 76
+hcl:
+  starts_with: '#'
+  length: 7
+  valid_characters: '^[a-f0-9]+$'
+ecl:
+  valid_values:
+    - amb
+    - blu
+    - brn
+    - gry
+    - grn
+    - hzl
+    - oth
+pid:
+  length: 9
+  valid_characters: '\d'
