@@ -2,7 +2,7 @@ import mock
 import os
 import pytest
 
-from day3.main import TobogganTrajectory, OutOfBoundsError
+from adventofcode2020.day3.main import TobogganTrajectory, OutOfBoundsError
 
 TEST_FILE_PATH = os.path.dirname(os.path.realpath(__file__))
 

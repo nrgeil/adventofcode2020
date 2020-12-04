@@ -2,7 +2,7 @@ import os
 
 import mock
 
-from day4.main import PassportChecker
+from adventofcode2020.day4.main import PassportChecker
 
 FILE_PATH = os.path.dirname(os.path.realpath(__file__))
 
