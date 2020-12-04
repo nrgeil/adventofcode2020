@@ -1,4 +1,4 @@
-with open('1.txt') as f:
+with open("1.txt") as f:
     all_entries = [int(i) for i in f.readlines()]
 
 # Part 1
@@ -13,7 +13,7 @@ while not found:
             break
 
 # Part 2
-with open('1.txt') as f:
+with open("1.txt") as f:
     all_entries = [int(i) for i in f.readlines()]
 
 e1 = all_entries.copy()

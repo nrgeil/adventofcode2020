@@ -20,7 +20,7 @@ class TobogganTrajectory:
         self.boundary = len(input_map[0])
 
     def check_for_tree(self):
-        if self.full_map[self.current_y][self.current_x] == '#':
+        if self.full_map[self.current_y][self.current_x] == "#":
             self.trees_found += 1
 
     def extend_map(self):
@@ -42,8 +42,8 @@ class TobogganTrajectory:
             self.check_for_tree()
 
 
-if __name__ == '__main__':
-    with open(f'{FILE_PATH}/input.txt') as f:
+if __name__ == "__main__":
+    with open(f"{FILE_PATH}/input.txt") as f:
         day3_input_map = f.read().splitlines()
         # Part 1
         tt = TobogganTrajectory(input_map=day3_input_map, move_x=3, move_y=1)
@@ -60,7 +60,9 @@ if __name__ == '__main__':
             [1, 2],
         ]
         for slope in slopes_to_check:
-            test_tt = TobogganTrajectory(input_map=day3_input_map, move_x=slope[0], move_y=slope[1])
+            test_tt = TobogganTrajectory(
+                input_map=day3_input_map, move_x=slope[0], move_y=slope[1]
+            )
             test_tt.traverse_slope()
             trees_found_list.append(test_tt.trees_found)
         print(reduce((lambda x, y: x * y), trees_found_list))
